@@ -193,6 +193,7 @@ CUE_PARSE_STR(date)
 CUE_PARSE_STR(comment)
 CUE_PARSE_STR(compilation);
 CUE_PARSE_STR(discnumber);
+CUE_PARSE_STR(artistsort);
 
 static void cue_parse_file(struct cue_parser *p)
 {
@@ -290,6 +291,7 @@ static void cue_parse_rem(struct cue_parser *p)
 		{ "COMMENT",     cue_parse_comment     },
 		{ "COMPILATION", cue_parse_compilation },
 		{ "DISCNUMBER",  cue_parse_discnumber  },
+		{ "ARTISTSORT",  cue_parse_artistsort  },
 		{ 0 },
 	};
 
